@@ -2,10 +2,11 @@ var browserSync  = require('browser-sync').create()
 var exec         = require('child_process').exec
 var gulp         = require('gulp')
 var runSequence  = require('run-sequence') // This is temporary, until Gulp 4.0 ships with support for sequential tasks
-var shell        = require('gulp-shell')
 
-gulp.task('build:jekyll', function() {
-  return shell.task(['jekyll build --incremental'])
+gulp.task('build:jekyll', function(callback) {
+  exec('jekyll build --incremental', function(err, stdout, stderr){
+    callback(err)
+  })
 })
 
 gulp.task('watch', function() {
