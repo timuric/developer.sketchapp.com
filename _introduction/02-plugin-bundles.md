@@ -80,12 +80,12 @@ Here’s an example:
     {
       "name": "Circles",
       "identifier": "circles",
-      "script": "Select Circles.js"
+      "script": "Select Circles.cocoascript"
     },
     {
       "name": "Rectangles",
       "identifier": "rectangles",
-      "script": "Select Rectangles.js"
+      "script": "Select Rectangles.cocoascript"
     }
   ],
   "menu": {
