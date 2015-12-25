@@ -49,7 +49,7 @@ Let's make Sketch run some CocoaScript code. For this example, we'll have it sho
 We want Sketch to run this bit of code:
 
 ```javascript
-context.document.showmessage('Hello, World!')
+context.document.showMessage('Hello, World!')
 ```
 
 To do that, we'll create a file called `hello.js` with this content
