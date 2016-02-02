@@ -6,7 +6,7 @@ order: 200
 
 A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.
 
-On disk, a Plugin is represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders.
+On disk, a Plugin is a folder with the `.sketchplugin` file extension, containing files and sub-folders.
 
 Strictly speaking, a Plugin is actually an [OS X package](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/DocumentPackages/DocumentPackages.html#//apple_ref/doc/uid/10000123i-CH106-SW1), arranged as an [OS X bundle](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/AboutBundles/AboutBundles.html#//apple_ref/doc/uid/10000123i-CH100-SW1).
 
@@ -14,7 +14,7 @@ A package is any directory that the Finder presents to the user as if it were a 
 
 A bundle is a directory with a standardized hierarchical structure that holds executable code and the resources used by that code.
 
-In the case of Sketch Plugins, we don’t currently allow native compiled code, but we do use the standard bundle layout (resources, for example, live in the Resources/ folder in the bundle), with the plugin-specific files located in an additional Sketch/ directory.
+Sketch Plugins don’t allow native compiled code, but we do use the standard bundle layout (resources, for example, live in the Resources/ folder in the bundle), with the plugin-specific files located in a Sketch/ directory.
 
 ## Terminology
 
@@ -46,7 +46,7 @@ mrwalker.sketchplugin
       Icon.png
 ```
 
-The most critical file in all of this is the manifest.json file, which tells Sketch where everything else lives.
+The most critical file is the `manifest.json` file, which tells Sketch where everything else lives.
 
 ## Manifest
 

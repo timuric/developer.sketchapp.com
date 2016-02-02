@@ -16,7 +16,7 @@ var onRun = function(context) {
 }
 ```
 
-By default, Sketch populates this variable with an NSArray of the currently selected objects.
+By default, Sketch populates this variable with an NSArray of the selected objects.
 
 If there is no selected objects, `selection.count()` will be 0, so you can use that to check if anything is selected:
 
@@ -57,7 +57,7 @@ doc.currentPage().deselectAllLayers()
 
 ## Selecting items
 
-Once you are comfortable iterating through the selection, you’ll probably want to modify it. To do that, there’s one method in [MSLayer](/reference/MSLayer/) you’ll be using quite a lot: `select:byExpandingSelection`.
+Once you are comfortable iterating through the selection, you’ll probably want to modify it. To do that, there’s one method in [MSLayer](/reference/MSLayer/) you’ll be using a lot: `select:byExpandingSelection`.
 
 As an example, we’ll select all layers named 'Rectangle':
 

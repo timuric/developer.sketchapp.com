@@ -42,7 +42,7 @@ You can also specify an absolute path, such as:
 
 Doing this sort of thing isn't generally recommended though. Your plugin will be installed by the user and/or copied into place by Sketch, and you have no guarantees about what other plugins or files are available on the system.
 
-Furthermore, even if you are able to reliably find an external library, you will have no guarantees about which version of it is present.
+Furthermore, even if you are able to reliably find an external library, you will have no guarantees about its version number.
 
 If your plugin requires third-party libraries, we generally recommend that you include a copy of them inside your plugin bundle (subject to the relevant licensing restrictions).
 

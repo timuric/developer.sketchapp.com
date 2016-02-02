@@ -9,7 +9,7 @@ order: 100
 
 A Plugin is a collection of one or more **scripts**. Each script defines one or more **commands** which extend Sketch in some way.
 
-On disk, a Plugin is simply represented as a folder with the `.sketchplugin` file extension, containing a number of files and sub-folders, arranged in a [standard layout](/introduction/plugin-bundles/).
+On disk, a Plugin is just a folder with the `.sketchplugin` file extension, containing files and sub-folders, arranged in a [standard layout](/introduction/plugin-bundles/).
 
 One special file in this folder - `manifest.json` - describes the Plugin. Sketch uses this to find the names of the commands that the Plugin implements, and to create menu commands which allow you to execute them.
 
@@ -60,6 +60,6 @@ Often the best place to start is with some existing examples. With this in mind,
 
 These aren’t intended to actually be massively useful additions to Sketch, but they illustrate how to get a Plugin working, and can be copied to form the basis of something new.
 
-The [Resources](/resources/) page also lists a number of good places to find other Plugins.
+The [Resources](/resources/) page also lists some good places to find other Plugins.
 
 When you feel ready to dive in and make something of your own, more information can be found in [Plugin Scripts](/introduction/plugin-scripts/).

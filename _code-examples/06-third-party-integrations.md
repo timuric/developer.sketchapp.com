@@ -7,7 +7,7 @@ order: 600
 
 ## Introduction
 
-One of the great things about Sketch is it's extensibility. If you're developing a new app or web service, it's really easy to add Sketch support to it. You can control Sketch from your application using CocoaScript, or you can extract information from .sketch documents using the free [sketchtool](http://sketchapp.com/tool/), either running it on the user's computer, or an OSX server on your data center.
+One of the great things about Sketch is it's extensibility. If you're developing a new app or web service, it's easy to add Sketch support to it. You can control Sketch from your application using CocoaScript, or you can extract information from .sketch documents using the free [sketchtool](http://sketchapp.com/tool/), either running it on the user's computer, or an OS X server on your data center.
 
 Here are some services and tools that already support Sketch:
 
@@ -30,7 +30,7 @@ Is yours missing? Add it by [editing this page]({{site.github_repo}}/tree/gh-pag
 
 ## Controlling Sketch using CocoaScript
 
-If you develop a third party app, chances are that you'll want to drive Sketch from it. That's pretty easy to do using CocoaScript and the `runPlugin*` methods documented at [AppController](/reference/AppController/) in combination with `coscript` (the CocoaScript binary, which can be downloaded from [here](/downloads/coscript.zip)).
+If you develop a third party app, chances are that you'll want to drive Sketch from it. That's pretty easy to do using CocoaScript and the `runPlugin*` methods documented at [AppController](/reference/AppController/) in combination with `coscript` (the CocoaScript binary, which you can download from [here](/downloads/coscript.zip)).
 
 You can think of `coscript` as the CocoaScript cousin of `osascript`, a command-line tool to run AppleScript code.
 
@@ -39,7 +39,7 @@ You can think of `coscript` as the CocoaScript cousin of `osascript`, a command-
 - work as a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop) for CocoaScript
 - run CocoaScript code you pass to it from a file
 
-The REPL part is cool, but we really want to play with the second: let's use coscript to drive Sketch!
+The REPL part is cool, but we're going to play with the second: let's use coscript to drive Sketch!
 
 
 ### Running arbitrary code

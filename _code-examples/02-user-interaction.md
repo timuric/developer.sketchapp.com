@@ -5,7 +5,7 @@ permalink: /code-examples/user-interaction/
 order: 200
 ---
 
-Making awesome stuff behind the courtains is cool, but sometimes you’ll want to communicate to your users the results of your complex operations.
+Making awesome stuff behind the curtains is cool, but sometimes you’ll want to communicate to your users the results of your complex operations.
 
 When that moment arrives, you have some options to interact with users:
 
