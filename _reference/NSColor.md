@@ -15,7 +15,7 @@ Sketch uses [MSColor](/reference/MSColor/) instances to represent colors interna
 
 Creates a new color with a gray component (0 is black, 1 is white):
 
-```javascript
+```
 var grayColor = NSColor.colorWithGray(0.5)
 ```
 
@@ -23,7 +23,7 @@ var grayColor = NSColor.colorWithGray(0.5)
 
 Creates a new color with a gray component, with alpha:
 
-```javascript
+```
 var grayColor = NSColor.colorWithGray_alpha(0.5, 0.2)
 ```
 
@@ -31,7 +31,7 @@ var grayColor = NSColor.colorWithGray_alpha(0.5, 0.2)
 
 Used to compare two NSColor instances. Returns `1` if both instances are similar (i.e: their color components differ by less than 0.001), `0` otherwise.
 
-```JavaScript
+```
 var grayOne = NSColor.colorWithGray(0.8)
 var grayTwo = NSColor.colorWithGray(0.8001)
 
@@ -42,7 +42,7 @@ log(grayOne.fuzzyIsEqual(grayTwo)) // 1
 
 Returns `1` if the color is white (or close enough), `0` otherwise.
 
-```javascript
+```
 var whiteColor = NSColor.colorWithGray(1.0)
 var blackColor = NSColor.colorWithGray(0.0)
 

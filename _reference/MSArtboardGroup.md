@@ -24,7 +24,7 @@ Get / set the ruler base for an Artboard (that is, the position where the (0,0) 
 
 If an Artboard is on x:100, y:100 on the canvas, `rulerBase` would be a point at (100,100):
 
-```JavaScript
+```
 var doc = context.document
 var artboard = doc.currentPage().currentArtboard()
 
@@ -57,7 +57,7 @@ Both return the [MSRulerData](/reference/MSRulerData/) object used to store rule
 
 To export an artboard you can use something like the following code:
 
-```JavaScript
+```
 var doc = context.document
 var artboard = doc.currentPage().artboards().firstObject()
 doc.saveArtboardOrSlice_toFile(artboard,"~/desktop/test.png")

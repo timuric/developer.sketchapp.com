@@ -47,7 +47,7 @@ When the handler is called, it is passed a single *context* variable. This conta
 
 For example, the selection property gives you a list of the selected layers in the current document:
 
-```JavaScript
+```
 var onRun = function(context) {
   var selection = context.selection
   for (var i=0; i<selection.count(); i++) {

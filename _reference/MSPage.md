@@ -35,7 +35,7 @@ Returns a readonly array of all artboards on the page. If you want to add a new 
 
 Adds an array of [MSLayer](/reference/MSLayer/) objects to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
 
-```javascript
+```
 var artboard = MSArtboardGroup.new()
 var frame = artboard.frame()
 frame.setX(0)
@@ -56,7 +56,7 @@ Available as of beta 184 / version 2.2.5
 
 **This is no longer working in Sketch 3.0**. If you need to duplicate a page, do this:
 
-```javascript
+```
 var doc = context.document
 var page = doc.currentPage()
 var newPage = page.copy()

@@ -8,7 +8,7 @@ title: MSMaskWithShape
 
 Creates a new shape, uses it to mask `bitmapLayer`, and groups both, returning the group. For example, to mask a selected bitmap:
 
-```javascript
+```
 var bitmap = context.selection[0]
 MSMaskWithShape.createMaskForSingleBitmap(bitmap)
 ```

@@ -32,13 +32,13 @@ Get / set the layer's visibility. Returns `true` if the layer is visible, and `f
 
 To **hide** a layer, do:
 
-```javascript
+```
 layer.setIsVisible(false)
 ```
 
 If you want to toggle a layer’s visibility, do:
 
-```javascript
+```
 layer.setIsVisible(!layer.isVisible())
 ```
 
@@ -49,13 +49,13 @@ Returns `true` if the layer is locked, and `false` if it isn’t locked.
 
 To **lock** a layer, do:
 
-```javascript
+```
 layer.setIsLocked(true)
 ```
 
 If you want to toggle a layer’s lock status, do:
 
-```javascript
+```
 layer.setIsLocked(!layer.isLocked())
 ```
 
@@ -67,7 +67,7 @@ Get / set layer rotation, in degrees.
 
 Flips the layer horizontally or vertically.
 
-```javascript
+```
 layer.isFlippedHorizontal()
 ```
 

@@ -4,7 +4,7 @@ title: MSEventHandler
 
 ## Introduction
 
-```javascript
+```
 var handler = context.document.eventHandlerManager().normalHandler();
 ```
 

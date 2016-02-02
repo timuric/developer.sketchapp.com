@@ -5,10 +5,15 @@ url: "http://developer.sketchapp.com"
 github_repo:  https://github.com/BohemianCoding/developer.sketchapp.com
 
 # Build settings
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ['smart', 'no_intra_emphasis', 'fenced_code_blocks', 'autolink', 'with_toc_data']
+kramdown:
+  input: GFM
+  auto_ids: true
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    fenced_code_blocks: true
+    default_lang: javascript
+
 sass:
   style: compressed
 exclude:

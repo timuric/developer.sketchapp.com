@@ -9,7 +9,7 @@ One of the first things you’ll probably want to do with a plugin is to modify 
 
 When your handler is called, it is passed a single `context` parameter. One of the things that Sketch will pass you in the context is the selection, so you can extract it like this:
 
-```JavaScript
+```
 var onRun = function(context) {
   var selection = context.selection
   // do something with your selection here
@@ -20,7 +20,7 @@ By default, Sketch populates this variable with an NSArray of the currently sele
 
 If there is no selected objects, `selection.count()` will be 0, so you can use that to check if anything is selected:
 
-```JavaScript
+```
 if ( selection.count() == 0 ) {
   // nothing is selected
 }
@@ -28,7 +28,7 @@ if ( selection.count() == 0 ) {
 
 To iterate through the selected items, you can use a `for(){}` loop:
 
-```JavaScript
+```
 for (var i=0; i < selection.count(); i++){
   var item = selection[i]
   // do something with item
@@ -37,7 +37,7 @@ for (var i=0; i < selection.count(); i++){
 
 or an Obj-C style iterator (which is way faster):
 
-```JavaScript
+```
 var loop = selection.objectEnumerator()
 while (item = loop.nextObject()) {
   // do something with item
@@ -50,7 +50,7 @@ You’ll probably want to clear the selected items in some plugins. The way to d
 
 For example, to unselect everything on the current page, you’d do this:
 
-```JavaScript
+```
 var doc = context.document
 doc.currentPage().deselectAllLayers()
 ```
@@ -61,7 +61,7 @@ Once you are comfortable iterating through the selection, you’ll probably want
 
 As an example, we’ll select all layers named 'Rectangle':
 
-```JavaScript
+```
 // First, we’ll unselect everything
 var doc = context.document
 doc.currentPage().deselectAllLayers()
@@ -80,7 +80,7 @@ If you want to select something without maintaining the existing selection, just
 
 If you need to unselect items, you can use `layer.select_byExpandingSelection(false, true)`. Using the inverse of the previous example, imagine you want to remove all items named 'Rectangle' from the current selection:
 
-```JavaScript
+```
 var loop = selection.objectEnumerator()
 while (layer = loop.nextObject()) {
   if( layer.name() == "Rectangle"){

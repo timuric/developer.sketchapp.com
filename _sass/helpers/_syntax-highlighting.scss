@@ -12,7 +12,8 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit;
 }
 
-.highlight {
+.highlight,
+.highlighter-rouge {
   @extend %vertical-rhythm;
 
   .hll { background-color: #003f8e; }

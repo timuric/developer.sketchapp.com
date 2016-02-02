@@ -12,7 +12,7 @@ rels:
 
 `AppController` contains a number of useful methods to control Sketch. The fastest way to get to them in your scripts is by calling `NSApp.delegate()`, which will return an AppController instance:
 
-```javascript
+```
 var app = NSApp.delegate()
 log(app.templateLibraryPath())
 ```
@@ -23,7 +23,7 @@ log(app.templateLibraryPath())
 
 Opens the Preferences panel at the given `identifier` tab. As of Sketch 3.4, identifier can be either: "general", "canvas", "layers" or "plugins".
 
-```javascript
+```
 var app = NSApp.delegate()
 app.openPreferencesWindowWithPreferencePaneIdentifier("plugins")
 ```
@@ -54,7 +54,7 @@ Runs the specified command `identifier` from the plugin bundle at `url`. See [MS
 
 Example (copy [this plugin](/downloads/plugins/hi.sketchplugin.zip) to your Desktop):
 
-```javascript
+```
 var path = [NSString stringWithString:"~/Desktop/Hi.sketchplugin"];
 var url = [NSURL fileURLWithPath:[path stringByExpandingTildeInPath]];
 
@@ -70,7 +70,7 @@ Runs a legacy-format plugin located at `url`.
 
 Runs the specified `script` as a plugin. This is useful if you want to execute dynamically generated code (for example, if you want to integrate Sketch with some third party tool, see [Third Party Integrations](/code-examples/third-party-integrations/) for more information):
 
-```javascript
+```
 var app = NSApp.delegate()
 var methodToExecute = "log"
 app.runPluginScript_name( methodToExecute + "('Hello, World')", "Log Demo")

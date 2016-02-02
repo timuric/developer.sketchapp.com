@@ -15,7 +15,7 @@ You can call the `askForUserInput` method to (surprise) ask for user input and u
 
 As an example, this is how you’d ask your user for their name:
 
-```JavaScript
+```
 var onRun = function(context) {
   var doc = context.document
   var name = doc.askForUserInput_initialValue("What is your name?", "")
@@ -28,7 +28,7 @@ If you need more complex user interactions, you can use the [NSAlert](https://de
 
 For example, this is how you create a dropdown menu with options:
 
-```JavaScript
+```
 function createSelect(msg, items, selectedItemIndex){
   selectedItemIndex = selectedItemIndex || 0
 
@@ -65,7 +65,7 @@ If you need to display information to your user, you can use two features: `[doc
 
 This is how you’d use `[doc showMessage]`:
 
-```JavaScript
+```
 var onRun = function(context) {
   var doc = context.document
   doc.showMessage("The operation is complete")
@@ -74,7 +74,7 @@ var onRun = function(context) {
 
 If you want a more "in your face" style, you can use:
 
-```JavaScript
+```
 var app = NSApplication.sharedApplication()
 app.displayDialog_withTitle("The operation is complete", "We’re done")
 ```

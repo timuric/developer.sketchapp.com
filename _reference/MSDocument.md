@@ -19,7 +19,7 @@ Returns the current document. It is equivalent to `context.document`.
 
 Gets / sets an NSArray of selected layers in the document. To get the selection in the current document, it's easier to just use `context.selection`, but if you need to work with selected layers in multiple documents, `selectedLayers` is the way to go:
 
-```JavaScript
+```
 // Assume currentDoc and anotherDoc are defined elsewhere
 var currentDocSelection = currentDoc.selectedLayers()
 var anotherDocSelection = anotherDoc.selectedLayers()
@@ -100,7 +100,7 @@ Returns a CGFloat representing the document's zoom value (1.0 = 100%, 2.0 = 200%
 
 Zoom the document to the specified zoomValue.
 
-```JavaScript
+```
 context.document.setZoomValue(2.0) // Sets the zoom level to 200%
 ```
 
@@ -108,7 +108,7 @@ context.document.setZoomValue(2.0) // Sets the zoom level to 200%
 
 Returns an NSArray of selected layers of class `className`:
 
-```JavaScript
+```
 // Get all bitmap layers in the selection
 context.document.selectedLayersOfClass(MSBitmapLayer)
 ```
@@ -125,7 +125,7 @@ Exports the slices in the `sliceLayers` array.
 
 Equivalent to the File › Export Artboards as PDF menu item. Exports a multipage PDF, with a page for each artboard in all pages. Requires a `nil` argument. If you want to export just some pages, you can use:
 
-```JavaScript
+```
 MSPDFBookExporter.exportPages(pageArray)
 ```
 

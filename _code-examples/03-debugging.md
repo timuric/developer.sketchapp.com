@@ -13,7 +13,7 @@ Whenever you’re running some code, you can use the `log()` feature to show the
 
 For example, if you want to display the value of a variable called `count`, you’d do:
 
-```JavaScript
+```
 log("The value of count is:" + count)
 ```
 

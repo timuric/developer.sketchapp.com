@@ -14,7 +14,7 @@ MSSliceLayer has —like MSLayer— a `frame` property that is an [MSRect](/refe
 
 To export a slice you can use something like the following code:
 
-```JavaScript
+```
 var doc = context.document
 var slice = doc.currentPage().slices().firstObject()
 doc.saveArtboardOrSlice_toFile(slice,"~/desktop/test.png")

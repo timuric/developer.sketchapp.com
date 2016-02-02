@@ -48,13 +48,13 @@ Let's make Sketch run some CocoaScript code. For this example, we'll have it sho
 
 We want Sketch to run this bit of code:
 
-```javascript
+```
 context.document.showMessage('Hello, World!')
 ```
 
 To do that, we'll create a file called `hello.js` with this content
 
-```javascript
+```
 var codeToRun = "context.document.showMessage('Hello, World!')"
 var sketchApp = COScript.app("Sketch")
 sketchApp.delegate().runPluginScript(codeToRun)
@@ -75,7 +75,7 @@ Now let's do something a bit more complex: let's ask Sketch to run a command fro
 
 To do this, let's download an example Plugin: [Hi](/downloads/plugins/hi.sketchplugin.zip). Install that, and create a new file called `plugin.js`, with this content:
 
-```javascript
+```
 var sketchApp = COScript.app("Sketch")
 var appSupportPath = NSFileManager.defaultManager().URLsForDirectory_inDomains(NSApplicationSupportDirectory,NSUserDomainMask).firstObject().path()
 var pluginFolderPath = appSupportPath.stringByAppendingPathComponent("com.bohemiancoding.sketch3/Plugins/Hi.sketchplugin")

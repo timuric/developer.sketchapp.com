@@ -22,7 +22,7 @@ Zooms in by 2x or out by the same amount.
 
 For example, if your document is currently displayed at a 100% zoom, this will set the zoom to 200%:
 
-```javascript
+```
 var view = context.document.currentView()
 view.zoomIn()
 ```
@@ -31,7 +31,7 @@ view.zoomIn()
 
 Zooms back to 100%.
 
-```javascript
+```
 view.actualSize()
 ```
 
@@ -41,7 +41,7 @@ Centers an arbitrary NSRect in the canvas.
 
 To center the view on the selected object (equivalent to hitting the <kbd>⌘3</kbd> shortcut):
 
-```javascript
+```
 var selected_object = context.selection[0],
     view = context.document.currentView()
 view.centerRect(selected_object.rect())
@@ -53,7 +53,7 @@ Zooms the canvas in or out and scrolls to fit supplied NSRect argument in the vi
 
 As an example, if you want to fit the view to the selected object, you’d do:
 
-```javascript
+```
 var selected_object = context.selection[0],
     view = context.document.currentView()
 view.zoomToFitRect(selected_object.rect())

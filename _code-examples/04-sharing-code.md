@@ -15,7 +15,7 @@ You can do this by using the `@import` feature in your scripts.
 
 This feature lets you include other files in your plugin. The syntax is simple:
 
-```JavaScript
+```
 @import 'path/to/your/file'
 ```
 
@@ -36,7 +36,7 @@ If you supply a relative path, Sketch will search for it. The search path for an
 
 You can also specify an absolute path, such as:
 
-```JavaScript
+```
 @import '/usr/local/share/mystuff/mylibrary.js'
 ```
 

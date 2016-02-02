@@ -19,7 +19,7 @@ You can use two different styles when writing your scripts: **dot notation** and
 
 If you have spent some time writing JavaScript code, you already know about the dot notation:
 
-```JavaScript
+```
 var l = a.length()
 ```
 
