@@ -13,6 +13,8 @@ kramdown:
   syntax_highlighter_opts:
     fenced_code_blocks: true
     default_lang: javascript
+    span:
+      disable: true
 
 sass:
   style: compressed
