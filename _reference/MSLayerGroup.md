@@ -18,9 +18,13 @@ Returns an array of all layers in the group - not including any of their childre
 
 Returns an array of all layers in the group, including those in any sub-groups that have click-through enabled. Basically this array contains all layers that are directly selectable from within this group.
 
-### resizeRoot
+### resizeRoot:
 
-Resizes the group to fit around all of its sub-layers.
+Available in Sketch 3.4 and below, removed in Sketch 3.5 (see `resizeToFitChildrenWithOption:`). Resizes the group to fit around all of its sub-layers.
+
+### resizeToFitChildrenWithOption:option
+
+Added in Sketch 3.5. Resizes the group to fit around all of its sub-layers. `option` is either 0 (MSLayerGroupResizeOptionLayerOnly) or 1 (MSLayerGroupResizeOptionResizeParentUponRectChange).
 
 ### addLayer:
 
