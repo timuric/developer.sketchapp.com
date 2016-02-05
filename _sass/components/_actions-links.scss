@@ -10,14 +10,12 @@ a {
   &:focus { color: $action; }
 }
 
-a.highlight {
+.masthead a {
   color: $text-light;
-
-  &.highlight:hover,
-  &.highlight:focus { color: $text-light-high; }
-
-  &.highlight:active,
-  &.highlight.active { color: $text-light-high; }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active { color: $text-light-high; }
 }
 
 .text-dark-link a,
@@ -32,29 +30,29 @@ a * {
 }
 
 // TODO see if I can find a more elegant solution for this
-a:hover h1,
-a:active h1,
-a:focus h1,
-a:hover h2,
-a:active h2,
-a:focus h2,
-a:hover h3,
-a:active h3,
-a:focus h3,
-a:hover h4,
-a:active h4,
-a:focus h4,
-a:hover h5,
-a:active h5,
-a:focus h5,
-a:hover h6,
-a:active h6,
-a:focus h6, {
-  color: $action-high;
-  small {
-    color: $action-high;
-  }
-}
+// a:hover h1,
+// a:active h1,
+// a:focus h1,
+// a:hover h2,
+// a:active h2,
+// a:focus h2,
+// a:hover h3,
+// a:active h3,
+// a:focus h3,
+// a:hover h4,
+// a:active h4,
+// a:focus h4,
+// a:hover h5,
+// a:active h5,
+// a:focus h5,
+// a:hover h6,
+// a:active h6,
+// a:focus h6, {
+//   color: $action-high;
+//   small {
+//     color: $action-high;
+//   }
+// }
 
 a > p,
 a > q {
