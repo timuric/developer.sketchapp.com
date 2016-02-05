@@ -1,3 +1,9 @@
+var observer = new FontFaceObserver('Aktiv-Grotesk');
+
+observer.check().then(function () {
+  document.documentElement.className += " fonts-loaded";
+});
+
 var tempScrollTop;
 
 // Main navigation logic

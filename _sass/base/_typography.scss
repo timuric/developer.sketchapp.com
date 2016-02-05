@@ -1,11 +1,15 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: $font-light 16px/1.5 "Aktiv-Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif; //1.48125
+  font: $font-light 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; //1.48125
   color: $text-dark-high;
 
   // Enabling kerning and optional ligatures
   text-rendering: optimizeLegibility;
+}
+
+html.fonts-loaded {
+  font-family: "Aktiv-Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @include tablet-and-below {
