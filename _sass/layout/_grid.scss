@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -5.6%; //This forces me to use 1056 as main reference for the columns
-    margin-bottom: -5.6% !important; //Compensating columns' margin bottom
+    margin-bottom: -3.5rem !important; //Compensating columns' margin bottom
   }
 
     /*Horizontally center the columns*/
@@ -38,16 +38,24 @@
       flex-direction: column-reverse;
     }
 
+    .row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .row.center-v {
+      align-items: center;
+      margin-bottom: 0 !important;
+    }
+
   .col {
-    margin-bottom: 05.3030303% !important; /*56/1056*/
+    margin-bottom: 3.5rem !important; /*56*/
     /*Gap between columns*/
     margin-left: 05.3030303%; /*56/1056*/
   }
 
     /*To vertically center contents inside each block (needs div wrapping the contents inside)*/
     .row.center-v > .col {
-      display: flex;
-      align-items: center;
+      margin-bottom: 0 !important;
     }
 
     /*Has no visual impact, but it's more elegant*/
@@ -80,7 +88,7 @@
   .col.span-1  { width: 03.030303%; /*32px*/ }
   .col.span-2  { width: 11.3636364%; /*120px*/ }
   .col.span-3  { width: 19.6969697%; /*208px*/ }
-  .col.span-4  { width: 28.030303%; /*296px*/ }
+  .col.span-4  { width: 28.030304%; /*296px*/ }
   .col.span-5  { width: 36.3636364%; /*384px*/ }
   .col.span-6  { width: 44.6969697%; /*472px*/ }
   .col.span-7  { width: 53.030303%; /*560px*/ }
