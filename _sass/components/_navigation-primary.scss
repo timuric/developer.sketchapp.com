@@ -77,26 +77,14 @@ body:not(.hero) .main-nav h1 a {
   vertical-align: middle;
 }
 
-// [id]:target {
-//   animation: target-fade 1s 1; //"Yellow" fade technique (Blue in this case)
-// }
-
-[id]:target::before {
-  content: "";
-  display: block;
-}
-
-  // @keyframes target-fade {
-  //   0% { background-color: rgba( $action-high, .08 ); }
-  //   100% { background-color: rgba(0,0,0,0); }
-  // }
-
 @include tablet-and-above {
   body {
     padding-top: 4.3125rem; //69px
   }
 
   [id]:target::before {
+    content: "";
+    display: block;
     padding-top: 4.3125rem; //Hack to make targets scroll below the main navigation (as it's fixed)
     margin-top: -4.3125rem;
   }
@@ -147,6 +135,8 @@ body:not(.hero) .main-nav h1 a {
   }
 
   [id]:target::before {
+    content: "";
+    display: block;
     padding-top: 3.8125rem; //Hack to make targets scroll below the main navigation (as it's fixed)
     margin-top: -3.8125rem;
   }
@@ -211,8 +201,8 @@ body:not(.hero) .main-nav h1 a {
       right: 1rem;
       top: 50%;
       transform: translateY(-50%);
-      background-image: url('data:image/svg+xml;utf8,<svg width="8" height="13" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg"><title>Disclosure Indicator</title><path d="M0,1.5 L1.5,0 L7.29201249,5.79201249 C7.68302319,6.18302319 7.68649149,6.81350851 7.29201249,7.20798751 L1.5,13 L0,11.5 L4.29422684,7.20577316 C4.68401459,6.81598541 4.68722761,6.18722761 4.29422684,5.79422684 L0,1.5 Z" fill="#207cdf" fill-rule="evenodd"/></svg>');
-      background-size: contain;
+      background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%2213%22%20viewBox%3D%220%200%208%2013%22%3E%3Cpath%20fill%3D%22%23207cdf%22%20fill-rule%3D%22evenodd%22%20d%3D%22M0%201.5L1.5%200l5.792%205.792c.39.39.394%201.022%200%201.416L1.5%2013%200%2011.5l4.294-4.294c.39-.39.393-1.02%200-1.412L0%201.5z%22%2F%3E%3C%2Fsvg%3E');
+      background-size: cover;
       opacity: .25;
     }
 
