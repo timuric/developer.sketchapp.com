@@ -1,11 +1,19 @@
 /* @group Main Footer */
 body > section + footer {
-  background: $background-light-dark;
+  background-color: $background-light;
 }
 
-body > section:nth-child(even):last-of-type + footer {
-  background: $background-light;
+  .extensions > section + footer {
+    background-color: #F5F6F7;
+  }
+
+body > section:nth-of-type(even):last-of-type + footer {
+  background-color: $background-light-dark;
 }
+
+  .extensions > section:nth-of-type(even):last-of-type + footer {
+    background-color: $background-light;
+  }
 
 .main-footer small {
   font-size: 1rem;
