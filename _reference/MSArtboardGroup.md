@@ -31,6 +31,14 @@ var artboard = doc.currentPage().currentArtboard()
 log(artboard.rulerBase()) // CGPoint { x = 100, y = 100 }
 ```
 
+### hasBackgroundColor
+
+A Bool indicating if the Artboard has a background color. 'backgroundColorGeneric' can access the color if this method returns YES.
+
+### backgroundColorGeneric
+
+A [MSColor](/reference/MSColor/) of the Artboard's background color. Only valid if 'hasBackgroundColor' is YES
+
 ### hasGuides:
 
 Returns `1` if the Artboard has guides, `0` otherwise.
