@@ -13,7 +13,7 @@ Return the number of unique images in the collection. Images can be referenced m
 
 ### (MSImageData)addNSImage:(NSImage)image convertColourspace:(BOOL)convertColorspace
 
-Add an image to the collection. We calculate a SHA1 for it, and only actually add a new item to the collection if it's not already present. The returned proxy is immediately usable as it has its imageData resolved already.
+Available in Sketch 3.4 and below, removed in Sketch 3.5 (see [MSImageData](/reference/MSImageData/)), add an image to the collection. We calculate a SHA1 for it, and only actually add a new item to the collection if it's not already present. The returned proxy is immediately usable as it has its imageData resolved already.
 
 ### (NSDictionary)rawImageDataIndexedBySHAs:(NSSet)shas;
 
