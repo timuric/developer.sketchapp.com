@@ -20,3 +20,5 @@ Only the most basic of properties have yet been exposed.
 ### textAlignment
 
 ### stringValue
+
+### (void)setHeightIsClipped:(BOOL)isClipped
