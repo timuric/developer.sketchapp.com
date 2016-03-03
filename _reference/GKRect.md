@@ -8,7 +8,7 @@ rels:
   - MSLayer
 ---
 
-
+**Note: GKRect was completely removed in Sketch 3.6.** The following information is here for historical reference.
 
 GKRect is nowadays mostly unused in the app, but there are a few places where it can still be set. Using the plain NSRect struct from Foundation is preferred; many objects will have a setRect method which accepts an NSRect, not a GKRect.
 
