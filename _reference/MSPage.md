@@ -35,7 +35,7 @@ Returns a readonly array of all artboards on the page. If you want to add a new 
 
 Adds an array of [MSLayer](/reference/MSLayer/) objects to the page. For example, if you want to add an 800x600 artboard to the current page, you'd do this:
 
-```
+```javascript
 var artboard = MSArtboardGroup.new()
 var frame = artboard.frame()
 frame.setX(0)
