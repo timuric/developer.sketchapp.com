@@ -94,3 +94,11 @@ Duplicates the layer and insert the copy above itself.
 ### userInfo:
 
 Returns a dictionary of metadata keys and values, if they have been using the corresponding methods in [MSPluginCommand](/reference/MSPluginCommand/) (`setValue:forKey:onLayer:` or `setValue:forKey:onLayer:forPluginIdentifier:`)
+
+### CSSAttributeString:
+
+Returns a string with the CSS Attributes for the layer (as seen on Edit › Copy CSS Attributes)
+
+### CSSAttributes:
+
+Returns an array with the CSS Attributes for the layer.
