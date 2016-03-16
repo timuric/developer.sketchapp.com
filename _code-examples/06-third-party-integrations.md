@@ -57,7 +57,7 @@ To do that, we'll create a file called `hello.js` with this content
 ```
 var codeToRun = "context.document.showMessage('Hello, World!')"
 var sketchApp = COScript.app("Sketch")
-sketchApp.delegate().runPluginScript(codeToRun)
+sketchApp.delegate().runPluginScript_name(codeToRun, "coscript Demo")
 ```
 
 Now launch Sketch, make sure a document window is open, and run this line of code:
