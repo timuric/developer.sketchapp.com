@@ -62,17 +62,6 @@ Returns the hexadecimal value for any given set of RGB components:
 log(MSColor.hexValueForRed_green_blue(1.0,0.4,0.0)) // ff6600
 ```
 
-### stringValueWithAlpha:(BOOL)includeAlpha
-
-Returns a CSS-friendly string representing the MSColor's values:
-
-```
-var color = MSColor.colorWithRed_green_blue_alpha(1.0,0.4,0.0,0.5)
-
-log(color.stringValueWithAlpha(true)) // rgba(255,102,0,0.50)
-log(color.stringValueWithAlpha(false)) // #FF6600
-```
-
 ### fuzzyIsEqual:(MSColor)color
 
 Used to compare two MSColor instances. Returns `1` if both instances are similar (i.e: their color components differ by less than 0.001), `0` otherwise.
